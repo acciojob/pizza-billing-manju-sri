@@ -31,14 +31,14 @@ public class Pizza {
         paperBagPrice=20;
         cheesePrice=80;
 
-        this.totalPrice= basePrice;
+        totalPrice= basePrice;
 
         isExtraToppingsAdded = false;
         isExtraCheeseAdded = false;
         isPaperBagAdded = false;
         isBillGenerated=false;
 
-        bill = "Base Price Of The Pizza: " + basePrice+ " \n ";
+        bill ="Base Price Of The Pizza: " + basePrice+ "\n";
     }
 
    public int getPrice(){
@@ -74,15 +74,15 @@ public class Pizza {
         if(isBillGenerated==false){
 
             if(isExtraCheeseAdded==true){
-                bill= bill +"Extra Cheese Added: "+ cheesePrice+" \n ";
+                bill= bill +"Extra Cheese Added: "+ cheesePrice+"\n";
             }
             if(isExtraToppingsAdded==true){
-                bill= bill +"Extra Toppings Added: "+ toppingsPrice +" \n ";
+                bill= bill +"Extra Toppings Added: "+ toppingsPrice +"\n";
             }
             if(isPaperBagAdded==true){
-                bill= bill +"Paperbag Added: "+ paperBagPrice+" \n ";
+                bill= bill +"Paperbag Added: "+ paperBagPrice+"\n";
             }
-            bill = bill + "Total Price: "+ totalPrice +" \n ";
+            bill = bill + "Total Price: "+ totalPrice +"\n";
 
             isBillGenerated=true;
         }
